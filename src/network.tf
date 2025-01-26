@@ -67,11 +67,11 @@ resource "azurerm_network_security_group" "databricks_public" {
   tags = var.tags
 }
 
-resource "azurerm_network_security_rule" "databricks_public_outbound_101" {
+resource "azurerm_network_security_rule" "databricks_public_outbound_100" {
   name                        = "Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-databricks-webapp"
   resource_group_name         = azurerm_resource_group.main.name
   network_security_group_name = azurerm_network_security_group.databricks_public.name
-  priority                    = 101
+  priority                    = 100
   direction                   = "Outbound"
   access                      = "Allow"
   protocol                    = "Tcp"
@@ -238,11 +238,11 @@ resource "azurerm_network_security_group" "databricks_private" {
   tags = var.tags
 }
 
-resource "azurerm_network_security_rule" "databricks_private_outbound_101" {
+resource "azurerm_network_security_rule" "databricks_private_outbound_100" {
   name                        = "Microsoft.Databricks-workspaces_UseOnly_databricks-worker-to-databricks-webapp"
   resource_group_name         = azurerm_resource_group.main.name
   network_security_group_name = azurerm_network_security_group.databricks_private.name
-  priority                    = 101
+  priority                    = 100
   direction                   = "Outbound"
   access                      = "Allow"
   protocol                    = "Tcp"
