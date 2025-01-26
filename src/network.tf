@@ -81,9 +81,7 @@ resource "azurerm_network_security_rule" "databricks_public_outbound_100" {
   destination_address_prefix  = "AzureDatabricks"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -101,9 +99,7 @@ resource "azurerm_network_security_rule" "databricks_public_outbound_102" {
   destination_address_prefix  = "Sql"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -121,9 +117,7 @@ resource "azurerm_network_security_rule" "databricks_public_outbound_103" {
   destination_address_prefix  = "Storage"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -141,9 +135,7 @@ resource "azurerm_network_security_rule" "databricks_public_outbound_104" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -161,9 +153,7 @@ resource "azurerm_network_security_rule" "databricks_public_outbound_105" {
   destination_address_prefix  = "EventHub"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -181,9 +171,7 @@ resource "azurerm_network_security_rule" "databricks_public_inbound_100" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -201,9 +189,7 @@ resource "azurerm_network_security_rule" "databricks_public_inbound_101" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -221,9 +207,7 @@ resource "azurerm_network_security_rule" "databricks_public_inbound_102" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -252,9 +236,7 @@ resource "azurerm_network_security_rule" "databricks_private_outbound_100" {
   destination_address_prefix  = "AzureDatabricks"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -272,9 +254,7 @@ resource "azurerm_network_security_rule" "databricks_private_outbound_102" {
   destination_address_prefix  = "Sql"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -292,9 +272,7 @@ resource "azurerm_network_security_rule" "databricks_private_outbound_103" {
   destination_address_prefix  = "Storage"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -312,9 +290,7 @@ resource "azurerm_network_security_rule" "databricks_private_outbound_104" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -332,9 +308,7 @@ resource "azurerm_network_security_rule" "databricks_private_outbound_105" {
   destination_address_prefix  = "EventHub"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -352,9 +326,7 @@ resource "azurerm_network_security_rule" "databricks_private_inbound_100" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -372,9 +344,7 @@ resource "azurerm_network_security_rule" "databricks_private_inbound_101" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
@@ -392,9 +362,7 @@ resource "azurerm_network_security_rule" "databricks_private_inbound_102" {
   destination_address_prefix  = "VirtualNetwork"
 
   lifecycle {
-    ignore_changes = [
-      description
-    ]
+    ignore_changes = all
   }
 }
 
