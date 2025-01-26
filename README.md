@@ -24,6 +24,5 @@ terraform apply
 
 ## ToDo
 
-- Create a storage account with private link enabled
 - Use serverless compute via private link
 - Verify that the Databricks workspace is accessible only from a private network
