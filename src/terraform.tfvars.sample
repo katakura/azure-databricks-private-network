@@ -1,0 +1,6 @@
+basename = "ktkrdbws"
+resource_group_name = "rg-databricks01"
+location = "japaneast"
+tags = {
+  "name" = "databricks test"
+}
